@@ -33,7 +33,9 @@ class PitchGridConnect extends React.Component {
   }
 
   onMouseEnter(player, side, { target: { clientWidth, offsetLeft, offsetTop } }) {
-    const x = window.innerWidth - offsetLeft < 400 ? offsetLeft - clientWidth - 100 : offsetLeft;
+    const widthHalf = window.innerWidth / 2;
+    const widthQuator = window.innerWidth / 4;
+    const x = window.innerWidth - offsetLeft < 400 || offsetLeft > widthQuator && offsetLeft <= widthHalf ? offsetLeft - clientWidth - 100 : offsetLeft;
     const y = window.innerHeight - offsetTop < 220 ? offsetTop - 160 : offsetTop;
     const cords = [x, y];
     const { model, dispatch } = this.props;

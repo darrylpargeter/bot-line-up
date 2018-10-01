@@ -4,13 +4,13 @@ import { createStore, applyMiddleware } from 'redux';
 import { fetchMatches } from '../actions';
 import rootReducer from '../reducers';
 
-const loggerMiddleware = createLogger();
+// const loggerMiddleware = createLogger();
 
 const store = createStore(
   rootReducer,
   applyMiddleware(
     thunkMiddleware,
-    loggerMiddleware,
+    // loggerMiddleware,
   ),
 );
 

@@ -31,9 +31,13 @@ const PlayerTitle = ({
 PlayerTitle.propTypes = {
   player: PropTypes.instanceOf(Object).isRequired,
   side: PropTypes.string.isRequired,
-  teamInfo: PropTypes.instanceOf(Object).isRequired,
+  teamInfo: PropTypes.string,
   mouseEnter: PropTypes.func.isRequired,
   mouseLeave: PropTypes.func.isRequired,
+};
+
+PlayerTitle.defaultProps = {
+  teamInfo: '',
 };
 
 export default PlayerTitle;

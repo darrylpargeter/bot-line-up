@@ -47,7 +47,7 @@ class FixtureConnect extends React.Component {
 
 FixtureConnect.propTypes = {
   teamInfo: PropTypes.instanceOf(Object).isRequired,
-  players: PropTypes.instanceOf(Array).isRequired,
+  players: PropTypes.instanceOf(Object).isRequired,
   dispatch: PropTypes.func.isRequired,
 };
 
