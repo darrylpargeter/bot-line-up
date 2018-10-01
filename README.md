@@ -1,3 +1,4 @@
+![Line up](imgs/line-up.png)
 # Install
 
 1) ```npm i```
