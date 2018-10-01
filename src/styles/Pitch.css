@@ -1,0 +1,95 @@
+.pitch-wrapper {
+  background: var(--pitch-bg);
+  height: 100%;
+  width: 100%;
+  background-size: 100vmin 100%;;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+}
+
+.pitch-border {
+  border: solid 2px var(--pitch-lines);
+  position: absolute;
+  top: 1vmin;
+  bottom: 1vmin;
+  left: 1vmin;
+  right: 1vmin;
+}
+
+.pitch-left-box {
+  border: solid 2px var(--pitch-lines);
+  position: absolute;
+  top: 20vmin;
+  bottom: 20vmin;
+  left: 1vmin;
+  right: 85%;
+  background: var(--pitch-bg);
+}
+
+.pitch-inside-left-box {
+  border: solid 2px var(--pitch-lines);
+  position: absolute;
+  top: 35vmin;
+  bottom: 35vmin;
+  left: 1vmin;
+  right: 93%;
+  border-left: 0;
+}
+
+.pitch-right-box {
+  background: var(--pitch-bg);
+  border: solid 2px var(--pitch-lines);
+  position: absolute;
+  top: 20vmin;
+  bottom: 20vmin;
+  right: 1vmin;
+  left: 85%;
+}
+
+
+.pitch-center-circle {
+  border: solid 2px var(--pitch-lines);
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}
+.pitch-left-circle {
+  border: solid 2px var(--pitch-lines);
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}
+.pitch-right-circle {
+  border: solid 2px var(--pitch-lines);
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+.pitch-center-line {
+  border-left: solid 2px var(--pitch-lines);
+  left: 50vw;
+  position: absolute;
+  bottom: 1vmin;
+  top: 1vmin;
+  right: 0;
+}
+
+.pitch-inside-right-box {
+  border: solid 2px var(--pitch-lines);
+  position: absolute;
+  top: 35vmin;
+  bottom: 35vmin;
+  right: 1vmin;
+  left: 93%;
+  border-right: 0;
+}

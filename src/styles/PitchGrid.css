@@ -1,0 +1,152 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 8px 6px rgba(0,0,0,0.2);
+  user-select: none;
+  transition: all .5s ease-in-ease-out;
+}
+
+.player-wrapper:hover {
+  border: 2.5px solid gold;
+  transition: all .5s ease-in-ease-out;
+}
+
+.home-colour {
+  background: var(--home-colour);
+  color: var(--off-white);
+  text-shadow: 1px 1px 2px rgba(30, 30, 30, 0.2);
+}
+
+.home-lighter {
+  background: var(--home-colour-light);
+  color: var(--off-white);
+  text-shadow: 1px 1px 2px rgba(30, 30, 30, 0.2);
+}
+
+.away-colour {
+  background: var(--away-colour);
+  color: var(--off-white);
+  text-shadow: 1px 1px 2px rgba(30, 30, 30, 0.2);
+}
+
+.away-lighter {
+  background: var(--away-colour-light);
+  color: var(--off-white);
+  text-shadow: 1px 1px 2px rgba(30, 30, 30, 0.2);
+}
+
+.pitch-grid {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "home-gk home-rb home-rm home-fw away-fw away-rm away-rb away-gk"
+    "home-gk home-cb home-cm home-fw away-fw-1 away-cm away-cb away-gk"
+    "home-gk home-cb-1 home-cm-1 home-fw-1 away-fw-1 away-cm away-cb-1 away-gk"
+    "home-gk home-lb home-lm home-fw-1 away-fw-2 away-lm away-lb away-gk";
+}
+
+.home-gk {
+  grid-area: home-gk;
+}
+
+.home-rb {
+  grid-area: home-rb;
+}
+
+.home-cb {
+  grid-area: home-cb;
+}
+
+.home-cb-1 {
+  grid-area: home-cb-1;
+}
+
+.home-lb {
+  grid-area: home-lb;
+}
+
+.home-rm {
+  grid-area: home-rm;
+}
+
+.home-cm {
+  grid-area: home-cm;
+}
+
+.home-cm-1 {
+  grid-area: home-cm-1;
+}
+
+.home-lm {
+  grid-area: home-lm;
+}
+
+.home-fw {
+  grid-area: home-fw;
+}
+
+.home-fw-1 {
+  grid-area: home-fw-1;
+}
+
+.away-fw {
+  grid-area: away-fw;
+}
+
+.away-fw-1 {
+  grid-area: away-fw-1;
+}
+
+.away-fw-2 {
+  grid-area: away-fw-2;
+}
+
+.away-rb {
+  grid-area: away-rb;
+}
+
+.away-cm {
+  grid-area: away-cm;
+}
+
+.away-lm {
+  grid-area: away-lm;
+}
+
+.away-rb {
+  grid-area: away-rb;
+}
+
+.away-cb {
+  grid-area: away-cb;
+}
+
+.away-cb-1 {
+  grid-area: away-cb-1;
+}
+
+.away-lb {
+  grid-area: away-lb;
+}
+
+.away-gk {
+  grid-area: away-gk;
+}

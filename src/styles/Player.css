@@ -1,0 +1,114 @@
+.player-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  z-index: 4000;
+}
+
+h4 {
+  padding: 0 20px;
+}
+
+.player-card-title {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: center;
+  overflow: hidden;
+  user-select: none;
+}
+
+.position, .name {
+  transform: skewX(-40deg);
+}
+
+.position h4, .name h4 {
+  display: inline-block;
+  transform: skewX(40deg);
+}
+
+.position:before {
+  content: '';
+  display: block;
+  height: 99%;
+  width: 50%;
+  position: absolute;
+  background: inherit;
+  top: 0;
+  left: 0;
+  transform: skewX(40deg);
+}
+.name:before {
+  content: '';
+  display: block;
+  height: 99.5%;
+  width: 50%;
+  position: absolute;
+  background: inherit;
+  top: 0;
+  right: 0;
+  transform: skewX(40deg);
+}
+
+
+.player-card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "goals played"
+    "yellowCard redCard"
+    "yellowCard redCard";
+}
+
+.goals {
+  grid-area: goals;
+  margin: 0 10px;
+  color: var(--off-white);
+}
+
+.played {
+  grid-area: played;
+  margin: 0 10px;
+  color: var(--off-white);
+}
+
+.yellowCard {
+  grid-area: yellowCard;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F9D614; 
+  color: var(--pitch-bg);
+  font-size: 30px;
+}
+
+.redCard {
+  grid-area: redCard;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F90F09;
+  font-size: 30px;
+}
+
+
+.player-card-enter {
+  opacity: 0.01;
+}
+
+.player-card-enter-active {
+  opacity: 1;
+  transition: all 200ms ease-in-ease-out;
+}
+
+
+.player-card-exit {
+  opacity: 1;
+}
+
+.player-card-exit-active {
+  opacity: 0;
+  transition: all 200ms ease-in-ease-out;
+}

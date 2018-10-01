@@ -1,0 +1,38 @@
+.team-wrapper {
+  position: absolute;
+  width: 49.5%;
+  left: 1vmin;
+  top: 1vmin;
+  height: 91%;
+  z-index: 800;
+  display: flex;
+  overflow: hidden;
+}
+
+.home-side {
+  left: 50%;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.away-side {
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.home-team {
+  background: rgba(31, 153, 205, 0.2);
+}
+
+.away-team {
+  background: rgba(205, 124, 31, 0.2);
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.team-info {
+  width: 100%;
+}

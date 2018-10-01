@@ -1,0 +1,11 @@
+.wrapper {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr .58fr;
+  grid-template-rows: 2fr .15fr;
+  grid-template-areas:
+    "line-up line-up"
+    "header header";
+  height: 100%;
+  width: 100%;
+}
